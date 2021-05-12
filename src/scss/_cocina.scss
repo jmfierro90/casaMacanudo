@@ -1,0 +1,17 @@
+.cocina{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background:url("../img/bg-cocina.png");
+    background-size: 100vw 100vh;
+
+    
+    .note{
+        transition: 0.5s;
+    }
+    .note:hover{
+        transform:scale(1.1);
+        transition: 0.5s;
+
+    }
+}

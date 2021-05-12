@@ -1,0 +1,225 @@
+
+#casaMacanudo{
+    position: absolute;
+    top: 0;
+
+    
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(../img/bg.png);
+
+    background-repeat: no-repeat; 
+    background-size: 100% 100%; 
+
+    .atticToolTip{
+         width: 30%;
+         position: absolute;
+         
+         right: 0;
+    }
+
+    #contenedor{
+        position: relative !important;
+        margin-top: 15vh;
+
+        @media(max-height: 700px){ 
+            margin-top: 18vh;
+        }
+
+    
+        @media(min-width:1600px){
+            margin-top: 19vh;
+        }
+        
+        #fondo{
+            position: absolute !important;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        #home{//CONTAINER INVISIBLE DE CUARTOS
+            top: 0;
+            left: 0;
+        
+            position: absolute;
+        
+            .house-item{ //CADA CUARTO
+                cursor: pointer;
+
+                .item{ // TEXTO
+                    font-family: LemonBrush;
+                    font-size: 3.5rem !important;
+
+                    @media(min-width: 1600px){
+                        font-size: 5rem !important;
+                    }
+                    pointer-events: none !important;
+            
+                    position: absolute !important;
+                    top: 25%;
+                    left: 20%;
+                }
+            }
+            
+            .auto-cont{
+                position: absolute;
+                bottom: 0 !important;
+                left: -18%;
+                
+                #auto{
+                    width: 75%;
+                    @media(min-width:1600px){
+                        width: 100%;
+                    }
+                }
+            }
+
+
+            #atticItem{
+
+                position: absolute !important;
+        
+                border-radius: 3px;
+                top: 26%;
+                left: 10%;
+        
+                width: 46%;
+                height: 11%; 
+            }
+
+            #bañoItem{
+                background-color: #9cdaf1;
+                position: absolute !important;
+        
+                border-radius: 3px;
+                top: 41.8%;
+                left: 9.5%;
+        
+                width: 18%;
+                height: 27%;
+                
+                opacity: 0% !important;
+                transition: opacity 0.5s; 
+            }
+        
+            #bañoItem:hover{
+                opacity: 100% !important;
+            }
+        
+            #playRoomItem{
+                background-color: #AAD5C8;
+                position: absolute !important;
+        
+                border-radius: 3px;
+                
+                top: 42.2%;
+                left: 29.5%;
+        
+                width: 32%;
+                height: 25.5%;
+                
+                opacity:0% !important;
+                transition: opacity 0.5s;
+            }
+        
+            #playRoomItem:hover{
+                opacity: 100% !important;
+                font-size: 22px;
+                
+            }
+        
+            #livingItem{
+                background-color: #EAC369;
+                position: absolute !important;
+                
+                border-radius: 3px;
+                
+                top:71.5%;
+                left: 9.5%;
+        
+                width: 25.5%;
+                height: 25.5%;
+                
+                opacity: 0% !important;
+                transition: opacity 0.5s;
+            }
+        
+            #livingItem:hover{
+                opacity: 100% !important;
+                font-size: 22px;  
+            }
+        
+            #cocinaItem{
+                background-color: #F8F2E5;
+                position: absolute !important;
+        
+                border-radius: 3px;
+                
+                top:71.5%;
+                left: 37.35%;
+        
+                width: 24.4%;
+                height: 26%;
+                
+                opacity: 0% !important;
+                transition: opacity 0.5s;
+            }
+        
+            #cocinaItem:hover{
+                opacity: 100% !important;
+                font-size: 22px;   
+            }
+        
+            #patioItem{
+                background-color: #77BEA4;
+                position: absolute !important;
+        
+                border-radius: 3px;
+                
+                top: 65.8%;
+                left: 63.6%;
+        
+                width: 27%;
+                height: 31.4%;
+                
+                opacity: 0% !important;
+                transition: opacity 0.5s;
+            }
+        
+            #patioItem:hover{
+                opacity: 100% !important;
+                font-size: 22px;
+            }
+        
+        }
+
+    }
+}
+
+//-----------------------------ANIMACIONES
+
+.shake {
+
+    animation: shake 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  
+
+ 

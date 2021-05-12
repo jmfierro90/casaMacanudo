@@ -1,0 +1,76 @@
+@import 'animate';
+@import 'home';
+@import 'baño';
+@import 'playRoom';
+@import 'living';
+@import 'cocina';
+@import 'patio';
+@import 'clouds';
+
+body, html{
+    max-height: 100vh !important;
+    max-width: 100vw !important;
+    overflow: hidden !important;
+
+    background-color: #eac369;
+}
+
+@font-face {
+    font-family: LemonBrush;
+    src: url(../img/LemonBrush.otf)
+}
+
+.font-brush{
+    font-family: LemonBrush;
+    font-size: 3rem !important;
+}
+
+.font-brush-Tool{
+    font-family: LemonBrush;
+    font-size: 2.4rem !important;
+}
+
+.font-volver{
+    font-family: LemonBrush;
+    font-size: 2.4rem !important;
+    color:white;
+    
+    position: absolute;
+    left:29%;
+    top: 18%;
+}
+
+.font-timer{
+    font-family: LemonBrush;
+    font-size: 2rem !important;
+    color:white;
+    
+    position: absolute;
+    left:29%;
+    top: 18%;
+}
+
+
+
+.arrow-volver:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  transition: 0.5s ease-in-out; 
+  
+  transform-origin: center center;
+}
+
+a{
+    color: inherit;
+    transition: 0.5s;
+}
+
+a:hover{
+    color:#EAC369;
+    transition: 0.5s;
+}
+
+.bg-macanudo-1{
+    background-color: #F16D6D;
+    
+}

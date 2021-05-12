@@ -1,0 +1,16 @@
+.patio{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background:url("../img/bg-patio.png");
+    background-size: 100vw 100vh;
+    
+    .patioToolTip{
+        width: 30%;
+        position: absolute;
+        
+        left: 0;
+        top: 86vh
+   }
+
+}

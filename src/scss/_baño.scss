@@ -1,0 +1,195 @@
+.baño{
+  position: relative;
+
+
+  width: 100vw;
+  height: 100vh;
+  background:url("../img/toilette-bg.png");
+  background-size: 100% 100%;
+
+  #flecha{//FLECHA CHUSMEAR
+    position: absolute;
+    top: 26%;
+    left: 70%;
+    
+    @media(min-width: 1600px){
+      top: 26%;
+      left: 72%;
+    }
+
+    img{
+      width: 70%;
+      @media(min-width: 1600px){
+        width: 100%;
+      }
+    }
+  }
+ 
+  .mirror { //ESPEJO 
+
+    width: 32%;
+    height: 74%;  
+    transform-origin: top left;
+
+    position: absolute;
+    top: -2%;
+    left: 34.5%;
+
+    @media(max-width: 1300px){
+      left: 30.9%;
+    }
+    @media(min-width: 1600px){
+      transform:scale(1.015);   
+      width: 35%;
+      height: 75%;
+    }
+  }
+
+  .mirror1{background: url("../img/mirrorSequence/mirror1.png") left center; background-size: 100% 100%;}
+  .mirror2{background: url("../img/mirrorSequence/mirror2.png") left center; opacity: 0; background-size: 100% 100%;}
+  .mirror3{background: url("../img/mirrorSequence/mirror3.png") left center; opacity: 0; background-size: 100% 100%;}
+  .mirror4{background: url("../img/mirrorSequence/mirror4.png") left center; opacity: 0; background-size: 100% 100%;}
+  .mirror5{background: url("../img/mirrorSequence/mirror5.png") left center; opacity: 0; background-size: 100% 100%;}
+  .mirror6{background: url("../img/mirrorSequence/mirror6.png") left center; opacity: 0; background-size: 100% 100%;}
+  .mirror7{background: url("../img/mirrorSequence/mirror7.png") left center; opacity: 0; background-size: 100% 100%;}
+  .mirror8{background: url("../img/mirrorSequence/mirror8.png") left center; opacity: 0; background-size: 100% 100%;}
+  .mirror9{background: url("../img/mirrorSequence/mirror9.png") left center; opacity: 0; background-size: 100% 100%;}
+  .mirror10{background: url("../img/mirrorSequence/mirror10.png") left center; opacity: 0; background-size: 100% 100%;}
+  .mirror11{background: url("../img/mirrorSequence/mirror11.png") left center; opacity: 0; background-size: 100% 100%;}
+  .mirror12{background: url("../img/mirrorSequence/mirror12.png") left center; opacity: 0; background-size: 100% 100%;}
+  .mirror13{background: url("../img/mirrorSequence/mirror13.png") left center; opacity: 0; background-size: 100% 100%;}
+
+  .cabinet{
+    position: relative;
+    top: 3%;
+    left: 35%;
+    width: 30%;
+    height: 62%;
+
+    @media(max-width: 1300px){
+      left: 32%;
+    }
+   
+    background:url("../img/cabinet.png");
+    background-size: 100% 100%;
+  
+    //CABINET ITEMS
+
+    .Lizto-item{
+      cursor: pointer;
+      position: absolute;
+      top: 2.8%;
+      left: 16%;
+
+      img{
+        width:5.2vw;
+      }
+    }
+
+    .enPixeles-item{
+      cursor: pointer;
+      position: absolute;
+      top: 1.3vh;
+      left: 55%;
+      
+      img{
+        width: 5.2vw;
+      }
+    }
+
+    .plendido-item{
+      cursor: pointer;
+      position: absolute;
+      top: 21.9vh;
+      left: 18%;
+      
+      
+      img{
+        margin-top: 5%;
+        width: 5.2vw;
+      }
+    }
+
+    .nap-item{
+      cursor: pointer;
+      position: absolute;
+      top: 21vh;
+      left: 70%;
+      
+      img{
+        margin-top: 10%;
+        width: 2.9vw;
+      }
+    }
+
+    .mila-item{
+      cursor: pointer;
+      position: absolute;
+      top: 45vh;
+      left: 10%;
+      
+      img{
+        width: 10vw;
+        margin-top: 2%;
+      }
+    }
+
+    .macanudo-item{
+      cursor: pointer;
+      position: absolute;
+      top: 43vh;
+      left: 60%;
+      
+      img{
+        width: 3.8vw;
+      }
+    }    
+  }
+
+  .itemSeleccionado{
+    position: absolute;
+    top: -55vh;
+    left: 10%;
+
+    width: 80vw;
+    height: 80vh;
+
+  }
+
+} 
+
+//--------------------------------------------ANIMACIONES
+
+.shk {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  animation-name: shakeMe;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes shakeMe {
+  2%, 18% {
+      transform: translate3d(-5px, 0, 0);
+  }
+
+  4%, 16% {
+      transform: translate3d(5px, 0, 0);
+  }
+
+  6%, 10%, 14% {
+      transform: translate3d(-5px, 0, 0);
+  }
+
+  8%, 12% {
+      transform: translate3d(5px, 0, 0);
+  }
+  
+  18.1% {
+      transform: translate3d(0px, 0, 0);
+  }
+}
+
+
+
